@@ -1,0 +1,12 @@
+﻿@model LessonListViewModel 
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach(var lesson in Model.Lessons)
+{
+    <div>
+        <h2>@lesson.Name</h2>
+        <h3>@lesson.Difficulty.ToString()</h3>
+        <h4>@lesson.Category.Name</h4>
+    </div>
+}
